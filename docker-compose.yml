@@ -1,0 +1,11 @@
+jenkins:
+  image: jenkinsci/jenkins:lts
+  container_name: jenkins_master
+  environment:
+    - JAVA_OPTS=-Dhudson.footerURL=http://khlaptop.fritz.box
+  ports:
+    - "8080:8080"
+    - "50000:50000"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock 
+    - /var/lib/docker:/var/lib/docker

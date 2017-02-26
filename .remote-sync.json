@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "khlaptop",
+  "port": "22",
+  "target": "/home/kevin/Projects/jenkins/jenkins-out-of-box",
+  "ignore": [
+    ".remote_sync.json",
+    ".git/**"
+  ],
+  "username": "kevin",
+  "keyfile": "/Users/Kevin/.ssh/id_rsa",
+  "watch": [],
+  "transport": "scp"
+}
